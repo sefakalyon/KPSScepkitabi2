@@ -1,0 +1,152 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#BC9191"
+    tools:context=".Anasayfa">
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="220dp"
+        android:layout_height="wrap_content"
+        android:layout_margin="55dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginEnd="20dp"
+        android:background="#C67A7A"
+        android:fontFamily="serif-monospace"
+        android:text="KPSS CEP KİTABI  -TARİH-"
+        android:textColor="#000000"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/anasyfbilgigtrbtn"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="15dp"
+        android:layout_marginTop="100dp"
+        android:layout_marginEnd="246dp"
+        android:layout_marginBottom="20dp"
+        android:backgroundTint="#C67A7A"
+        android:text="Bilgi Getir"
+        android:textColor="#000000"
+        app:layout_constraintBottom_toTopOf="@+id/ansyfsorugtrbtn"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView3" />
+
+    <Button
+        android:id="@+id/ansyfsorugtrbtn"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="15dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="59dp"
+        android:layout_marginBottom="20dp"
+        android:backgroundTint="#C67A7A"
+        android:text="SORU GETİR"
+        android:textColor="#000000"
+        app:layout_constraintBottom_toTopOf="@+id/gunlukdnmbtn"
+        app:layout_constraintEnd_toStartOf="@+id/kayitliktlrmbtn"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/anasyfbilgigtrbtn" />
+
+    <Button
+        android:id="@+id/kayitliktlrmbtn"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:layout_marginEnd="32dp"
+        android:layout_marginBottom="206dp"
+        android:backgroundTint="#C67A7A"
+        android:text="KAYITLI KUTULARIM"
+        android:textColor="#000000"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/guideline2"
+        app:layout_constraintVertical_bias="1.0" />
+
+    <Button
+        android:id="@+id/gunlukdnmbtn"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="15dp"
+        android:layout_marginEnd="59dp"
+        android:backgroundTint="#C67A7A"
+        android:text="GÜNLÜK DENEME"
+        android:textColor="#000000"
+        app:layout_constraintBottom_toTopOf="@+id/extraanasyfbtn"
+        app:layout_constraintEnd_toStartOf="@+id/kayitliktlrmbtn"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/ansyfsorugtrbtn" />
+
+    <TextView
+        android:id="@+id/gunlukbilgihakkitextview"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="97dp"
+        android:layout_marginTop="40dp"
+        android:layout_marginEnd="256dp"
+        android:layout_marginBottom="23dp"
+        android:text="TextView"
+        android:textSize="16sp"
+        app:layout_constraintBottom_toTopOf="@+id/gunluksoruhakkitextview"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/extraanasyfbtn" />
+
+    <TextView
+        android:id="@+id/gunluksoruhakkitextview"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="97dp"
+        android:layout_marginEnd="256dp"
+        android:layout_marginBottom="104dp"
+        android:text="TextView"
+        android:textSize="16sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/gunlukbilgihakkitextview" />
+
+    <Button
+        android:id="@+id/extraanasyfbtn"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="15dp"
+        android:layout_marginEnd="59dp"
+        android:layout_marginBottom="26dp"
+        android:backgroundTint="#C67A7A"
+        android:text="EXTRA"
+        android:textColor="#000000"
+        app:layout_constraintBottom_toTopOf="@+id/gunlukbilgihakkitextview"
+        app:layout_constraintEnd_toStartOf="@+id/kayitliktlrmbtn"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/gunlukdnmbtn" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_begin="89dp" />
+
+    <TextView
+        android:id="@+id/kullanici_id_textview"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="337dp"
+        android:layout_marginBottom="130dp"
+        android:text="TextView"
+        app:layout_constraintBottom_toTopOf="@+id/anasyfbilgigtrbtn"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
